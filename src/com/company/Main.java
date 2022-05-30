@@ -21,7 +21,6 @@ public class Main {
             do{
                 myVariable = random.nextInt(100);
             }while (myVariable % 2 == 1);
-
             myArray[i] = myVariable;
         }
 
