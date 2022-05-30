@@ -5,11 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int sizeOfArray = 0;
+        int sizeOfArray = 2;
         Random random = new Random();
-        do{
-        sizeOfArray = random.nextInt(100);
-        }while (sizeOfArray > 0 && sizeOfArray % 2 == 1);
+        //do{
+        //sizeOfArray = random.nextInt(100);
+        //}while (sizeOfArray > 0 && sizeOfArray % 2 == 1);
 
         System.out.println("Sise of array = " + sizeOfArray);
 
