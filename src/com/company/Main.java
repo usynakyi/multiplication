@@ -5,8 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int sizeOfArray = 0;
         Random random = new Random();
-        int sizeOfArray = random.nextInt(100);
+        do{
+        sizeOfArray = random.nextInt(100);
+        }while (sizeOfArray > 0);
 
         do{
             sizeOfArray = random.nextInt(100);
@@ -26,11 +29,10 @@ public class Main {
 
         int halfOfArray = sizeOfArray / 2;
         Arrays.sort(myArray);
-        for (int i = 0; i <= halfOfArray; i++) {
+        for (int i = 0; i < halfOfArray; i++) {
             System.out.print(myArray[i] + " ");
         }
 
     }
 
 }
-
