@@ -9,13 +9,12 @@ public class Main {
         Random random = new Random();
         do{
         sizeOfArray = random.nextInt(100);
-        }while (sizeOfArray > 0);
+        }while (sizeOfArray > 0 && sizeOfArray % 2 == 1);
 
-        do{
-            sizeOfArray = random.nextInt(100);
-        }while (sizeOfArray % 2 == 1);
+        System.out.println("Sise of array = " + sizeOfArray);
 
-        int[] myArray = new int[sizeOfArray];
+        int[] myArray;
+        myArray = new int[sizeOfArray];
 
         for (int i = 0; i < sizeOfArray; i++) {
 
@@ -28,6 +27,7 @@ public class Main {
         }
 
         int halfOfArray = sizeOfArray / 2;
+        System.out.println("Sise of half array = " + halfOfArray);
         Arrays.sort(myArray);
         for (int i = 0; i < halfOfArray; i++) {
             System.out.print(myArray[i] + " ");
