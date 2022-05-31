@@ -15,7 +15,6 @@ public class Main {
 
         int[] myArray;
         myArray = new int[sizeOfArray];
-
         for (int i = 0; i < sizeOfArray; i++) {
 
             int myVariable = random.nextInt(100);
